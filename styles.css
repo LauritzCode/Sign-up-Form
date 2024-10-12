@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(53deg, rgba(6,17,32,1) 0%, rgba(79,84,80,1) 77%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: rgb(39, 39, 39);
+    width: 700px;
+    margin: 0 auto;
+    background: rgb(248, 246, 246);
+    height: 100%;
+    right: 0;
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px;
+    width: 600px
+    
+}
+
+.fill-info {
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.51);
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 20px 30px;
+}
+
+.top-text {
+    font-size: 1.25rem;
+    margin-top: 100px;
+    padding: 30px;
+    width: 600px;
+    font-weight: bold;
+}
+
+.top-text p:last-child {
+    margin-top: 10px
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.15rem;
+    background-color: rgb(62, 215, 62);
+    border: none;
+    border-radius: 8px;
+    margin-left: 30px;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.50);
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 1.15rem;
+}
