@@ -5,68 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <div class="brand-wrap">
-            <div class="svg-logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: scaleX(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);"><path d="M7.08 11.25A4.84 4.84 0 0 1 8 9.05L4.43 5.49A9.88 9.88 0 0 0 2 11.25zM9.05 8a4.84 4.84 0 0 1 2.2-.91V2a9.88 9.88 0 0 0-5.76 2.43zm3.7-6v5A4.84 4.84 0 0 1 15 8l3.56-3.56A9.88 9.88 0 0 0 12.75 2zM8 15a4.84 4.84 0 0 1-.91-2.2H2a9.88 9.88 0 0 0 2.39 5.76zm3.25 1.92a4.84 4.84 0 0 1-2.2-.92l-3.56 3.57A9.88 9.88 0 0 0 11.25 22zM16 9.05a4.84 4.84 0 0 1 .91 2.2h5a9.88 9.88 0 0 0-2.39-5.76zM15 16a4.84 4.84 0 0 1-2.2.91v5a9.88 9.88 0 0 0 5.76-2.39zm1.92-3.25A4.84 4.84 0 0 1 16 15l3.56 3.56A9.88 9.88 0 0 0 22 12.75z"></path></svg>
-            </div>
-            <strong>
-                <p>Unlock possibilities, one click at a time.</p>
-            </strong>
+    <div class="bg-wrapper">
+        <img class="bg-img" src="/imgs/bg-img.jpg" alt="Abstract background image">
+    </div>
+    <header class="brand-wrap">
+        <div class="svg-logo" aria-hidden="true">
+            <!-- SVG Logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: scaleX(-1);">
+                <path d="M7.08 11.25A4.84 4.84 0 0 1 8 9.05L4.43 5.49A9.88 9.88 0 0 0 2 11.25zM9.05 8a4.84 4.84 0 0 1 2.2-.91V2a9.88 9.88 0 0 0-5.76 2.43zm3.7-6v5A4.84 4.84 0 0 1 15 8l3.56-3.56A9.88 9.88 0 0 0 12.75 2zM8 15a4.84 4.84 0 0 1-.91-2.2H2a9.88 9.88 0 0 0 2.39 5.76zm3.25 1.92a4.84 4.84 0 0 1-2.2-.92l-3.56 3.57A9.88 9.88 0 0 0 11.25 22zM16 9.05a4.84 4.84 0 0 1 .91 2.2h5a9.88 9.88 0 0 0-2.39-5.76zM15 16a4.84 4.84 0 0 1-2.2.91v5a9.88 9.88 0 0 0 5.76-2.39zm1.92-3.25A4.84 4.84 0 0 1 16 15l3.56 3.56A9.88 9.88 0 0 0 22 12.75z"></path>
+            </svg>
         </div>
-        <div class="bg-wrapper">
-        <img class="bg-img" src="/imgs/bg-img.jpg" alt="bg-image-abstract">
-    </div>
-    <div class="container">
+        <p><strong>Unlock possibilities, one click at a time.</strong></p>
+    </header>
+    <main class="container">
         <div class="top-text">
-    <p>This is not a real online service!
-    You know you need something like this in your life
-     to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
-
-     <p>You <em>know</em> you want to.</p>
-    </div>
-     <form>
-        <div class="form-wrap">
-        <legend>Let's do this!</legend>
-        <fieldset>
-            <div class="formgroup">
-                <div>
-                    <label for="first-name" class="name-label">FIRST NAME</label>
-                    <input id="first-name" type="text" placeholder="First name" required>
-                </div>
-                <div>
-                    <label for="last-name" class="name-label">LAST NAME</label>
-                    <input id="last-name" type="text" placeholder="First name" required>
-                </div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <form aria-label="Sign-up Form">
+            <div class="form-wrap">
+                <legend>Let's do this!</legend>
+                <fieldset>
+                    <div class="formgroup">
+                        <div>
+                            <label for="first-name" class="name-label">First Name</label>
+                            <input id="first-name" name="first-name" type="text" placeholder="First name" required>
+                        </div>
+                        <div>
+                            <label for="last-name" class="name-label">Last Name</label>
+                            <input id="last-name" name="last-name" type="text" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <div>
+                            <label for="email" class="name-label">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        </div>
+                        <div>
+                            <label for="phone-number" class="name-label">Phone Number</label>
+                            <input id="phone-number" name="phone-number" type="tel" placeholder="+45 55 55 55 55" required>
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <div>
+                            <label for="password" class="name-label">Password</label>
+                            <input id="password" name="password" type="password" required>
+                        </div>
+                        <div>
+                            <label for="password-confirm" class="name-label">Confirm Password</label>
+                            <input id="password-confirm" name="password-confirm" type="password" required>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
-            <div class="formgroup">
-                <div>
-                    <label for="email" class="name-label">EMAIL</label>
-                    <input id="email" type="email" placeholder="you@example.com" required>
-                </div>
-                <div>
-                    <label for="phone-number" class="name-label">PHONE NUMBER</label>
-                    <input id="phone-number" type="number" placeholder="+45 55 55 55 55" required>
-                </div>
-            </div>
-            <div class="formgroup">
-                <div>
-                    <label for="password" class="name-label">PASSWORD</label>
-                    <input id="password" type="password" required>
-                </div>
-                <div>
-                    <label for="password-confirm" class="name-label">CONFRIM PASSWORD</label>
-                    <input id="password-confirm" type="password" required>
-                </div>
-            </div>
-        </fieldset>
-    </div>
-        <button type="submit">Create Account</button>
-     </form>
-    </div>
+            <button type="submit">Create Account</button>
+        </form>
+    </main>
 </body>
 </html>

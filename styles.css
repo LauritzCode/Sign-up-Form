@@ -5,21 +5,28 @@
 }
 
 body {
-    background: linear-gradient(53deg, rgba(6,17,32,1) 0%, rgba(79,84,80,1) 77%);
-    height: 100vh;
+    background: rgb(23, 25, 27);
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     font-family: "Roboto", sans-serif;
-    overflow: hidden;
 }
 
+.bg-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 100vh;
+    z-index: -1;
+}
 
 .bg-img {
-    width: 100vw;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
+    object-fit: cover;
     filter: blur(50px);
+    width: 100%;
+    height: 100%;
 }
 
 .brand-wrap {
@@ -28,32 +35,47 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin-top: 200px;
     background: transparent;
+    max-width: 50%;
 }
 
 .brand-wrap p {
     font-size: 5rem;
-    width: calc(100vw - 50vw);
     margin-left: 10px;
+    max-width: 50vw;
+    word-wrap: break-word;
 }
 
 .brand-wrap svg {
     margin-left: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(10deg, rgba(238,238,238,1) 0%, rgba(228,235,239,1) 53%);
+    width: 50%;
+    margin-left: auto;
+    
 
+}
+
+/*
 .container {
     position: absolute;
     display: flex;
     flex-direction: column;
     color: rgb(39, 39, 39);
     width: 700px;
+    max-width: 700px;
     margin: 0 auto;
-    background: rgb(248, 246, 246);
-    height: 100%;
+    background: linear-gradient(10deg, rgba(238,238,238,1) 0%, rgba(228,235,239,1) 53%);
+    height: 100vh;
+    min-height: 100vh;
     right: 0;
 }
+
+*/
 
 fieldset {
     border: none;
@@ -69,8 +91,9 @@ fieldset {
     padding: 20px 30px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(36, 39, 36);
+    background-color: rgb(23, 25, 27);
     color: white;
+    width: 100%;
 }
 
 .top-text {
@@ -88,7 +111,7 @@ fieldset {
 button {
     padding: 10px 20px;
     font-size: 1.15rem;
-    background-color: rgb(36, 39, 36);
+    background-color: rgb(23, 25, 27);
     border: none;
     border-radius: 8px;
     margin-left: 30px;
@@ -136,7 +159,7 @@ label {
     height: 25px;
     padding: 10px 0px;
     font-size: 16px;
-    padding-left: 5px
+    padding-left: 5px;
 }
 
 input {
@@ -153,3 +176,30 @@ input {
   input:invalid {
     border: solid red 1px;
   }
+
+
+  @media (max-width: 768px) {
+    .brand-wrap {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .top-text {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .formgroup div {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    button {
+        width: calc(100% - 2rem);
+        margin-left: 1rem;
+    }
+}
+
